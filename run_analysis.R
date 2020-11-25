@@ -10,8 +10,7 @@
     
 ## Downloading and unzipping file if it does not exist
     if (!file.exists("./UCI HAR Dataset") & !file.exists("data.zip")) {
-    myURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2
-        FUCI%20HAR%20Dataset.zip"
+    myURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     download.file(myURL, destfile = "data.zip")
     unzip("data.zip")
 }
