@@ -82,7 +82,7 @@
         summarise_all(.funs = mean)
     
 ## Data output
-    write.table(average_data, "average_data.txt")
+    write.table(average_data, "average_data.txt", row.names = FALSE)
 
 ## Cleaning global environment
     rm(list = ls())
